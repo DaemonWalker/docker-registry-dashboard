@@ -1,0 +1,19 @@
+@import "antd/dist/antd.css";
+
+.layout {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+}
+
+.site-layout-content {
+    padding: 24px;
+    background: #fff;
+    flex: 1;
+}
