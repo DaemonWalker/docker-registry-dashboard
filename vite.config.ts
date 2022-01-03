@@ -7,7 +7,7 @@ export default defineConfig({
     server: {
         proxy: {
             "/v2": {
-                target: "https://192.168.12.51:5000/",
+                target: "http://49.232.131.156:5000/",
                 secure: false,
                 changeOrigin: true,
             }

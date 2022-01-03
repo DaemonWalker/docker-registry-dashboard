@@ -4,7 +4,13 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {DefaultLayout} from "./layouts/DefaultLayout";
 
 function App() {
-    const queryClient = new QueryClient()
+    const queryClient = new QueryClient({
+        defaultOptions: {
+            queries: {
+                refetchOnWindowFocus: false, refetchOnMount: false
+            }
+        }
+    })
     return (
         <QueryClientProvider client={queryClient}>
             <BrowserRouter>
